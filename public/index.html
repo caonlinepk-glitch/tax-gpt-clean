@@ -47,9 +47,6 @@
     <main class="main">
       <header class="topbar">
         <h1 class="title">CAOnline AI Chat (Beta)</h1>
-
-        <button id="menuBtn" class="mobile-menu-btn">☰</button>
-
         <div class="top-actions">
           <button id="clearBtn" class="btn small">Clear</button>
           <button id="settingsBtn" class="btn small">Settings</button>
@@ -75,26 +72,5 @@
   </div>
 
   <script src="app.js"></script>
-
-  <script>
-  const menuBtn = document.getElementById("menuBtn");
-  const sidebar = document.querySelector(".sidebar");
-
-  // Create overlay
-  const overlay = document.createElement("div");
-  overlay.className = "sidebar-overlay";
-  document.body.appendChild(overlay);
-
-  menuBtn.addEventListener("click", () => {
-    sidebar.classList.add("open");
-    overlay.classList.add("show");
-  });
-
-  overlay.addEventListener("click", () => {
-    sidebar.classList.remove("open");
-    overlay.classList.remove("show");
-  });
-  </script>
-
 </body>
 </html>
