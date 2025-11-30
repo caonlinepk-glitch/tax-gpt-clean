@@ -1,5 +1,3 @@
-console.log("OPENAI_API_KEY exists?", !!process.env.OPENAI_API_KEY);
-
 import OpenAI from "openai";
 
 export default async function handler(req, res) {
